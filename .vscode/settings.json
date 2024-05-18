@@ -1,0 +1,44 @@
+{
+    "sqltools.connections": [
+        {
+            "dbDriver": "mssqlnodev8",
+            "connectionTimeout": 15,
+            "sidePanelOptions": {
+                "inaccessibleDatabase": true,
+                "inaccessibleSchema": true
+            },
+            "previewLimit": 50,
+            "odbcDriver": "SQL Server",
+            "port": 1433,
+            "msnodesqlv8Options": {},
+            "driver": "MSSQL",
+            "name": "SQL Server Local",
+            "connectionMethod": "Integrated",
+            "server": "localhost"
+        },
+        {
+            "mysqlOptions": {
+                "authProtocol": "xprotocol",
+                "enableSsl": "Disabled"
+            },
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 33060,
+            "driver": "MySQL",
+            "name": "MySQL Local",
+            "database": "new_app",
+            "username": "root",
+            "askForPassword": true
+        },
+        {
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 5432,
+            "driver": "PostgreSQL",
+            "name": "Postgres Local",
+            "database": "postgres",
+            "username": "postfgres",
+            "password": ""
+        }
+    ]
+}
