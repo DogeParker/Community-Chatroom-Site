@@ -4,8 +4,37 @@
     <meta charset=utf-8>
     <script language="JavaScript" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" ></script>
     <script src="https://comet-server.com/CometServerApi.js" type="text/javascript"></script>
-    
+    <script src="script.js"></script>
     <style>
+        body{
+            font-family: FreeMono, monospace;
+            font-size:25px;
+        }
+        * {
+        	margin: 0;
+        	padding: 0;
+        	box-sizing: border-box;
+        }
+        header{
+
+
+        	display: flex;
+        	flex-direction: column;
+        	align-items: center;
+        	justify-content: center;
+        	background: linear-gradient(rgb(219, 217, 211), rgb(163, 162, 157));
+        	font-size: 2rem;
+        	font-family: sans-serif;
+        	color: rgb(7, 9, 10);
+            height:100px;
+        	width: 100%;
+        	background-color: rgb(152, 228, 165);
+        	text-align: center;
+        	padding-top: 12px;
+        	border-radius: 16px;
+        	border: 2px solid rgb(14, 43, 1);
+        }
+    /*added this*/
     pre{
         border: 1px solid #ccc;
         padding: 5px;
@@ -14,13 +43,19 @@
     </style>
 </head>
 <body>
-
+    <header class="container">
+      
+        <div class="icon">---</div>
+        <div class="temp"><strong>18°C</strong></div>
+        <div class="summary">----</div>
+        <div class="location"></div>
+    </header>
 <div id="web_chat"></div>
 
 <div>
- Name :<input type="text" id="name"><br><br>
- Text: <textarea id="text"></textarea><br>
- <input type="button" onclick="send();" value="send" ><br>
+<strong>Name:</strong> <input type="text" id="name"><br><br>
+ <strong>Text:</strong> <textarea id="text"></textarea><br>
+ <input type="button" onclick="send();" value="send" style="font-family: FreeMono, monospace; font-size: 20px; padding:5px; margin: 10px"><br>
 </div>
 
 <script type="text/javascript">
